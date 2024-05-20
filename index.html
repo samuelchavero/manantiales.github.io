@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Manantiales Pagina Comercial</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/templatemo-ocean-vibes.css">
+    <link rel="stylesheet" href="css/styles.css"> <!-- Agrega esta línea para incluir el CSS de las notificaciones -->
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #custom-video-container {
+            width: 100%;
+            height: 400px; /* Adjust as needed */
+            position: relative;
+            overflow: hidden;
+        }
+        .custom-swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        .custom-swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .custom-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        #custom-video-control-button {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 10;
+        }
+    
+        
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        .tm-site-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff;
+            color: #fff;
+        }
+
+        .header-logo img {
+            height: 50px;
+            width: 50px;
+        }
+
+        .header-notification {
+            position: relative;
+        }
+
+        .notification-toggle {
+            cursor: pointer;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        .notification-box {
+            position: absolute;
+            top: 60px;
+            right: 0;
+            width: 300px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            display: none;
+        }
+
+        .notification-link {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .notification-link .fa-envelope {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+        .notification-title {
+            flex-grow: 1;
+            font-size: 16px;
+            font-weight: bold;
+        }
+         /* Estilos CSS para el slider */
+         .swiper-container {
+            width: 100%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .swiper-slide img {
+            max-width: 170px; /* Ajusta el tamaño de las imágenes */
+            height: auto;
+        }
+
+        .notification-count {
+            background-color: #ff0000;
+            color: #fff;
+            border-radius: 50%;
+            padding: 5px 10px;
+            font-size: 14px;
+        }
+
+        .notification-summary {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .notification-summary ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .notification-summary li {
+            display: flex;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .tm-center-img {
+    display: block;
+    margin: 0 auto;
+}
+
+.tm-text-center {
+    text-align: center;
+}
+
+.testimonial-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Ajusta la altura según tus necesidades */
+}
+
+
+
+        .notification-img img {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            margin-right: 70px;
+        }
+
+        .notification-info {
+            flex-grow: 1;
+        }
+
+        .notification-info h4 {
+            margin: 0 0 5px;
+            font-size: 13px;
+        }
+
+        .notification-info p {
+            margin: 0;
+            font-size: 12px;
+            color: #666;
+        }
+
+        .notification-video {
+            height: 50px;
+            width: 50px;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="tm-site-header">
+        <div class="header-logo">
+            <img src="img/logo.png" alt="Logo">
+        </div>
+        <em class="tm-tagline tm-color-light-gray"></em>
+        <div class="header-notification">
+            <video class="notification-video" autoplay muted loop>
+                <source src="img/notificacion.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="notification-box">
+                <a class="notification-link" href="#">
+                    <span class="fa fa-enelope"></span>
+                    <span class="notification-title">NOTIFICACIONES</span>
+                    <span class="notificatio-count"></span>
+                </a>
+                <div class="notification-summary">
+                    <ul>
+                        <li>
+                            <a class="notification-img" href="#"><img src="img/logo.png"  alt="Notificación 1"></a>
+                            <div class="notification-info">
+                                <h4><a href="https://wa.link/vad5w1">Bienvenido al Nuevo sitio web para comprar y vender en todo manantiales y horizonte</a></h4>
+                                <p></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="notification-img" href="#"><img src="img/logo.png" alt="Notificación 2"></a>
+                            <div class="notification-info">
+                                <h4><a href="https://wa.link/vad5w1">Tu negocio, servicio o Articulo en venta va a ser promocionado en todos los barrios de Manantiales, y en todos los barrios Horizonte de la Zona.</a></h4>
+                                <p></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="notification-img" href="#"><img src="img/logo.png" alt="Notificación 3"></a>
+                            <div class="notification-info">
+                                <h4><a href="https://wa.link/vad5w1">Estimamos que en 15 días van a estar actualizados todos los negocios, productos y servicios de la página.</a></h4>
+                                <p></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+
+    <!-- Video banner 400 px height -->
+    <div id="custom-video-container">
+        <div class="swiper-container custom-swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide custom-swiper-slide">
+                    <video class="custom-video" autoplay muted loop>
+                        <source src="img/intro.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="swiper-slide custom-swiper-slide">
+                    <video class="custom-video" autoplay muted loop>
+                        <source src="img/banner1.mp4" type="video/mp4">
+                    </video>
+                </div>
+             
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagiation"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-buton-next"></div>
+            <div class="swiper-buton-prev"></div>
+        </div>
+        <i id="custom-video-control-button" class="fas fa-pause"></i>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const customSwiper = new Swiper('.custom-swiper-container', {
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+
+            const videoControlButton = document.getElementById('custom-video-control-button');
+            videoControlButton.addEventListener('click', () => {
+                const videos = document.querySelectorAll('.custom-video');
+                videos.forEach(video => {
+                    if (video.paused) {
+                        video.play();
+                        videoControlButton.classList.remove('fa-play');
+                        videoControlButton.classList.add('fa-pause');
+                    } else {
+                        video.pause();
+                        videoControlButton.classList.remove('fa-pause');
+                        videoControlButton.classList.add('fa-play');
+                    }
+                });
+            });
+        });
+    </script>
+    <br><br>
+    <h2 class="tm-color-gray tm-testimonial-col tm-page-title tm-text-center">¡Negocios Destacados!</h2>
+    <br>
+    <blockquote>
+    <section id="aa-client-brand">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="aa-client-brand-area">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><a href="#"><img src="img/8.png" alt="java img"></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="img/8.png" alt="jquery img"></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="img/8.png" alt="html5 img"></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="img/8.png" alt="css3 img"></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="img/8.png" alt="wordPress img"></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="img/8.png" alt="joomla img"></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="img/8.png" alt="java img"></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="img/8.png" alt="jquery img"></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="img/8.png" alt="html5 img"></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="img/8.png" alt="css3 img"></a></div>
+                                <div class="swiper-slide"><a href="#"><img src="img/8.png" alt="wordPress img"></a></div>
+                            </div>
+                            <!-- Agregar paginación del slider -->
+                            <div class="swipr-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- / Client Brand Section -->
+    
+    
+    
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Inicialización de Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+                delay: 3000, // Cambiar a 3000 para que cada slide dure 3 segundos
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            slidesPerView: 5, // Número de imágenes visibles por slide
+            spaceBetween: 30, // Espacio entre imágenes
+            breakpoints: {
+                // Configuración para diferentes tamaños de pantalla
+                320: {
+                    slidesPerView: 2,
+                    spaceBetween: 10
+                },
+                480: {
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                },
+                640: {
+                    slidesPerView: 4,
+                    spaceBetween: 30
+                },
+                800: {
+                    slidesPerView: 5,
+                    spaceBetween: 30
+                }
+            }
+        });
+    </script>
+
+
+<br><br><br>
+<h2 class="tm-color-gray tm-testimonial-col tm-page-title tm-text-center">¡Categorías!</h2>
+<br>
+<blockquote>
+<section id="aa-client-brand">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="aa-client-brand-area">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><a href="#"><img src="img/12.png" alt="java img"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="img/13.png" alt="jquery img"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="img/14.png" alt="html5 img"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="img/15.png" alt="css3 img"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="img/16.png" alt="wordPress img"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="img/17.png" alt="joomla img"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="img/18.png" alt="java img"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="img/19.png" alt="jquery img"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="img/20.png" alt="html5 img"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="img/21.png" alt="css3 img"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="img/22.png" alt="wordPress img"></a></div>
+                        </div>
+                        <!-- Agregar paginación del slider -->
+                        <div class="swipr-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- / Client Brand Section -->
+
+    <br><br>
+<h2 class="tm-color-gray tm-testimonial-col tm-page-title tm-text-center">¡Articulos en Venta!</h2>
+<br>
+<blockquote>
+<section id="aa-client-brand">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="aa-client-brand-area">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><a href="#"><img src="img/sale.png" alt="java img"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="img/sale.png" alt="jquery img"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="img/sale.png" alt="html5 img"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="img/sale.png" alt="css3 img"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="img/sale.png" alt="wordPress img"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="img/sale.png" alt="joomla img"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="img/sale.png" alt="java img"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="img/sale.png" alt="jquery img"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="img/sale.png" alt="html5 img"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="img/sale.png" alt="css3 img"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="img/sale.png" alt="wordPress img"></a></div>
+                        </div>
+                        <!-- Agregar paginación del slider -->
+                        <div class="swipr-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- / Client Brand Section -->
+
+
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- Inicialización de Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        loop: true,
+        autoplay: {
+            delay: 3000, // Cambiar a 3000 para que cada slide dure 3 segundos
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        slidesPerView: 5, // Número de imágenes visibles por slide
+        spaceBetween: 30, // Espacio entre imágenes
+        breakpoints: {
+            // Configuración para diferentes tamaños de pantalla
+            320: {
+                slidesPerView: 2,
+                spaceBetween: 10
+            },
+            480: {
+                slidesPerView: 3,
+                spaceBetween: 20
+            },
+            640: {
+                slidesPerView: 4,
+                spaceBetween: 30
+            },
+            800: {
+                slidesPerView: 5,
+                spaceBetween: 30
+            }
+        }
+    });
+</script>
+
+
+<h2 class="tm-color-gray tm-testimonial-col tm-page-title"></h2>
+<div class="tm-row tm-testimonial-row">
+    <div class="tm-col tm-testimonial-col tm-testimonial-col-2 tm-text-center">
+        <h2 class="tm-color-gray tm-testimonial-col tm-page-title"></h2>
+        <div class="testimonial-img-container">
+            <img src="img/9.png" width="70px" height="auto" alt="Image" class="tm-mb-30 tm-center-img">
+        </div>
+        <br>
+        <h2 class="tm-color-gray tm-testimonial-col tm-page-title">Conectá, publicá, crecé</h2>
+        <blockquote>
+            <p>
+                Creamos este espacio para promover nuestros servicios y artículos de forma organizada y accesible para todos.<span class="tm-color-primary"></span>
+            </p>
+            <br>
+        </blockquote>
+        <blockquote class="tm-mb-50">
+            <p>
+                <span class="tm-color-primary"></span>
+            </p>
+        </blockquote>  
+    </div>
+    <div class="tm-col tm-testimonial-col tm-testimonial-col-2 tm-text-center">
+        <h2 class="tm-color-gray tm-testimonial-col tm-page-title"></h2>
+        <div class="testimonial-img-container">
+            <img src="img/10.png" width="70px" height="auto" alt="Image" class="tm-mb-30 tm-center-img">
+        </div>
+        
+        <h2 class="tm-color-gray tm-testimonial-col tm-page-title tm-text-center">Info 24/7</h2>
+        <blockquote>
+            <p>
+                Encontrá todo lo que necesitas saber sobre horarios, ofertas y ubicación de negocios, disponible las 24 horas.<span class="tm-color-primary"></span>
+            </p>
+            <br>
+        </blockquote>
+        <blockquote class="tm-mb-50">
+            <p>
+                <span class="tm-color-primary"></span>
+            </p>
+        </blockquote>  
+    </div>
+    
+    <div class="tm-col tm-testimonial-col tm-testimonial-col-2 tm-text-center">
+        <br>
+        <div class="testimonial-img-container">
+            <br><br><br><br>
+            <img src="img/11.png" width="80px" height="auto" alt="Image" class="tm-mb-30 tm-center-img">
+        </div>
+        
+        <h2 class="tm-color-gray tm-testimonial-col tm-page-title">Unite a la comunidad</h2>
+        <p>
+            Esta página está abierta para todos, Para tener un espacio organizado y accesible donde promocionar negocios.
+        </p>
+        <br><br><br>
+    </div>
+</div>
+</div>
+</div>
+
+
+            
+        </div>
+        <br>
+        <h2 class="tm-color-gray tm-testimonial-col tm-page-title tm-text-center">¡Gracias por ser parte de esta comunidad!</h2>
+        <div class="tm-text-center">
+            <br>
+            <a href="https://wa.link/vad5w1" class="tm-btn tm-btn-primary mfp-prevent-close tm-btn-next">
+                ¡Unite!
+            </a>
+        </div>           
+        <blockquote>
+            <p>
+                <span class="tm-color-primary"></span>
+            </p>
+            <br>
+        </blockquote>
+        <blockquote class="tm-mb-50">
+            <p>
+                <span class="tm-color-primary"></span>
+            </p>
+        </blockquote>  
+    </div>
+ 
+</div>
+</div>
+</div>
+
+    <div id="about" class="popup mfp-with-anim mfp-hide tm-bg-gray">
+        <a href="#" class="tm-close-popup">
+            return home
+            <i class="fas fa-times"></i>
+        </a>
+        <h2 class="tm-color-primary tm-about-col tm-mb-40 tm-page-title">About Ocean Vibes</h2>
+        <div class="tm-row tm-about-row">
+            <div class="tm-col tm-about-col tm-about-left">                    
+                <img src="img/about.jpg" alt="Image" class="tm-mb-30">
+                <p class="tm-mb-40">
+                    Suspendisse sit amet pellentesque nunc. Vivamus fringilla
+                    tellus finibus lacus blandit, siet amet aliquet augue sagittis.
+                    Duis nec auctor felis, nec ornare ex. In non ante ligula.
+                </p>
+                <p class="tm-mb-40">
+                    Curabitur non augue dignissim est pulvibar lobortis. Nunc
+                    vulputate, mi vel cursus mollis, justo mauris rutrum dui, id
+                    egestas ante ligula id nunc. Interdum et malesuada fames
+                    ac ante ipsum primis in faucibus.
+                </p>
+            </div>
+            <div class="tm-col tm-about-col">
+                <p class="tm-mb-40">
+                    You are NOT allowed to re-distribute this template ZIP file
+                    on any website that <span class="tm-color-primary">collects and reposts</span> free templates
+                    from many different websites.
+                </p>
+                <p class="tm-mb-40">
+                    Pellentesque vitae ipsum vel risus molestie cursus nec quis
+                    lectus. Duis egestas lorem eu nisi finibus, sit amet
+                    elementum lacus pretium. In tempor felis vitae nulla feugiat aliquam.
+                </p>
+                <p class="tm-mb-40">
+            If you need a working HTML contact form, 
+            please visit our <a rel="nofollow" href="https://templatemo.com/contact" target="_parent">contact page</a>. </p>
+                <a href="#" class="tm-btn tm-btn-primary mfp-prevent-close tm-btn-contact tm-mb-40">
+                    Contact Us
+                </a>
+            </div>               
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.notification-video').addEventListener('click', function() {
+            var notificationBox = document.querySelector('.notification-box');
+            if (notificationBox.style.display === 'none' || notificationBox.style.display === '') {
+                notificationBox.style.display = 'block';
+            } else {
+                notificationBox.style.display = 'none';
+            }
+        });
+    </script>
+
+
+
+        <!-- Popup itself -->
+        <div id="intro" class="popup mfp-with-anim mfp-hide tm-bg-gray">
+            <a href="#" class="tm-close-popup">
+                return home
+                <i class="fas fa-times"></i>
+            </a>
+            <div class="tm-row tm-intro-row">
+                <img src="img/intro.jpg" alt="Image" class="tm-intro-img">
+                <div class="tm-col tm-bg-white tm-intro-pad">
+                    <h2 class="tm-color-primary tm-page-title">Introducing Ocean Vibes</h2>
+                    <div class="tm-row tm-content-row">
+                        <div class="tm-col-6 tm-intro-col-l">
+                            <p>
+                                This CSS template is 100% free provided by 
+                                <a rel="nofollow" href="https://templatemo.com/page/1" target="_parent">TemplateMo</a> 
+                                website. You can use this template for any purpose. You can apply
+                          this as a CMS theme or a custom website builder template. </p>
+                            <p>
+                                You can support our website by contributing 
+                                <a rel="nofollow" href="http://paypal.me/templatemo" target="_parent">a little via <strong>PayPal</strong></a>
+                                or spreading a word about TemplateMo to your friends.
+                                If you have any question, feel free to send 
+                        us a message. </p>
+                            <p class="tm-mb-0">
+                                <strong>Credit</strong> goes to Pexels for the video banner and images used in this template. Some images are taken from Unsplash. Both Pexels and Unsplash are great websites for free photos.
+                            </p>
+                        </div>
+                        <div class="tm-col-6">
+                            <p>
+                                You are not allowed to re-distribute this
+                                template as a downloadable ZIP file on
+                                any template collection website.
+                            </p>
+                            <p>
+                                Top right corner is a return home with an
+                                icon that will close this pop-up page.
+                            </p>
+                            <p class="tm-mb-80">
+                                Next Page will bring you to the gallery
+                                page directly without going back to main
+                                menu.
+                            </p>
+                            <div class="tm-text-center">
+                                <a href="#" class="tm-btn tm-btn-primary mfp-prevent-close tm-btn-next">
+                                    Next Page
+                                </a>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>                
+            </div> 
+        </div>
+
+        
+        <div id="gallery" class="popup mfp-with-anim mfp-hide tm-bg-gray">
+            <a href="#" class="tm-close-popup">
+                
+                <i class="fas fa-times"></i>
+            </a>
+            <div class="tm-row tm-gallery-row">
+                <div class="tm-gallery">
+                    <div class="tm-gallery-container">                        
+                        <figure class="effect-chico tm-gallery-item portrait">
+                            <img src="img/gallery/portrait-01.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>Chico's main fear was missing the morning bus.</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item nature">
+                            <img src="img/gallery/nature-01.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>TemplateMo is the best website for free css templates.</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item animal">
+                            <img src="img/gallery/animal-01.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>Chico's main fear was missing the morning bus.</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item building">
+                            <img src="img/gallery/building-01.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>TemplateMo is the best free css website templates.</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item portrait">
+                            <img src="img/gallery/portrait-02.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>Chico's main fear was missing the morning bus.</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item nature">
+                            <img src="img/gallery/nature-02.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>Chico's main fear was missing the morning bus.</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item animal">
+                            <img src="img/gallery/animal-02.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>Chico's main fear was missing the morning bus.</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item building">
+                            <img src="img/gallery/building-02.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>Chico's main fear was missing the morning bus.</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item portrait">
+                            <img src="img/gallery/portrait-03.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>Chico's main fear was missing the morning bus.</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item animal">
+                            <img src="img/gallery/animal-03.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>Chico's main fear was missing the morning bus.</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item building">
+                            <img src="img/gallery/building-03.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>Chico's main fear was missing the morning bus.</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item portrait">
+                            <img src="img/gallery/portrait-04.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>Chico's main fear was missing the morning bus.</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item animal">
+                            <img src="img/gallery/animal-04.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>Chico's main fear was missing the morning bus.</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item building">
+                            <img src="img/gallery/building-04.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>Chico's main fear was missing the morning bus.</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item portrait">
+                            <img src="img/gallery/portrait-05.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>Chico's main fear was missing the morning bus.</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item animal">
+                            <img src="img/gallery/animal-05.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>Chico's main fear was missing the morning bus.</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item building">
+                            <img src="img/gallery/building-05.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>Chico's main fear was missing the morning bus.</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item portrait">
+                            <img src="img/gallery/portrait-06.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>Chico's main fear was missing the morning bus.</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item animal">
+                            <img src="img/gallery/animal-06.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>Chico's main fear was missing the morning bus.</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item building">
+                            <img src="img/gallery/building-06.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>Chico's main fear was missing the morning bus.</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item portrait">
+                            <img src="img/gallery/portrait-07.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>Chico's main fear was missing the morning bus.</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item animal">
+                            <img src="img/gallery/animal-07.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>Chico's main fear was missing the morning bus.</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item building">
+                            <img src="img/gallery/building-07.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>Chico's main fear was missing the morning bus.</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item portrait">
+                            <img src="img/gallery/portrait-08.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>Chico's main fear was missing the morning bus.</p>							
+                            </figcaption>			
+                        </figure>                                                
+                        
+                        <figure class="effect-chico tm-gallery-item nature">
+                            <img src="img/gallery/nature-03.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>Chico's main fear was missing the morning bus.</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item nature">
+                            <img src="img/gallery/nature-04.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>Chico's main fear was missing the morning bus.</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item nature">
+                            <img src="img/gallery/nature-05.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>Chico's main fear was missing the morning bus.</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item nature">
+                            <img src="img/gallery/nature-06.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>Chico's main fear was missing the morning bus.</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item nature">
+                            <img src="img/gallery/nature-07.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>Chico's main fear was missing the morning bus.</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item nature">
+                            <img src="img/gallery/nature-08.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>Chico's main fear was missing the morning bus.</p>							
+                            </figcaption>			
+                        </figure>                                                
+                        
+                        <figure class="effect-chico tm-gallery-item animal">
+                            <img src="img/gallery/animal-08.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>Chico's main fear was missing the morning bus.</p>							
+                            </figcaption>			
+                        </figure>
+                        <figure class="effect-chico tm-gallery-item building">
+                            <img src="img/gallery/building-08.jpg" alt="Image"/>
+                            <figcaption>
+                                <p>TemplateMo is the best free website for html css templates.</p>							
+                            </figcaption>			
+                        </figure>                
+                    </div>
+                </div>
+                <!-- Gallery navigation and description -->
+                <div class="tm-col tm-gallery-right">
+                    <h2 class="tm-color-primary tm-mt-35 tm-page-title">Gallery</h2>
+                    <div class="tm-gallery-right-inner">
+                        <ul class="tm-gallery-links">
+                            <li>
+                                <a href="#" class="active tm-gallery-link" data-filter="*">
+                                    <i class="fas fa-layer-group tm-gallery-link-icon"></i>
+                                    All
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="tm-gallery-link" data-filter="portrait">
+                                    <i class="fas fa-portrait tm-gallery-link-icon"></i>
+                                    Portraits
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="tm-gallery-link" data-filter="nature">
+                                    <i class="fas fa-leaf tm-gallery-link-icon"></i>
+                                    Nature
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="tm-gallery-link" data-filter="animal">
+                                    <i class="fas fa-paw tm-gallery-link-icon"></i>
+                                    Animals
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="tm-gallery-link" data-filter="building">
+                                    <i class="far fa-building tm-gallery-link-icon"></i>
+                                    Buildings
+                                </a>
+                            </li>
+                        </ul>
+                        <p>
+                            Different icons are used for
+                            different categories. There are 4 or more
+                            pages of photos in this gallery. Each
+                            thumbnail has a nice hover effect.
+                        </p>
+                        <p>
+                            Proin lacus enim, finibus sed magna a,
+                            molestie lacinia est. Maecenas id dolor
+                            lorem. Donec sodales ex velit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="testimonials" class="popup mfp-with-anim mfp-hide tm-bg-gray">
+            <a href="#" class="tm-close-popup">
+                return home
+                <i class="fas fa-times"></i>
+            </a>
+            <div class="tm-testimonials-inner">
+                <h2 class="tm-color-gray tm-testimonial-col tm-page-title">Testimonials</h2>
+                <div class="tm-row tm-testimonial-row">                
+                    <div class="tm-col tm-testimonial-col">
+                        <p>
+                            OCEAN vibes is free website template from 
+                            <a rel="nofollow" href="https://templatemo.com" class="tm-color-primary">TemplateMo</a>
+                            website. You are allowed to use
+                            it for commercial purpose. You can convert this template as a CMS theme or a custom
+                            website builder template.
+                        </p>
+                        <em class="tm-mb-30 tm-color-light-gray">
+                            You may support us by telling your friends
+                            about our TemplateMo site. Feel free to 
+                            contact us if you have anything to ask.
+                        </em>
+                        <p>
+                            You can make a little contribution via
+                            <a rel="nofollow" href="http://paypal.me/templatemo" target="_parent"><strong>PayPal</strong></a>
+                                or saying about TemplateMo to your friends. Duis egestas lorem eu nisi
+                            finibus, sit amet elementum lacus pretium.
+                        </p>
+                        <p>
+                            In tempor felis vitae nulla feugiat aliquam.
+                            Vivamus vitae congue mi. Sed maximus velit
+                            vestibulum nisl condimentum hendrerit.
+                        </p>
+                    </div>
+                    <div class="tm-col tm-testimonial-col tm-testimonial-col-2">
+                        <img src="img/testimonial-01.jpg" alt="Image" class="tm-mb-30">
+                        <blockquote>
+                            <p>
+                                "Suspendisse eu mollis diam, at ullamcorper
+                                diam. Ut sit amet arcu metus. Nullam mattis
+                                eros eget." by <span class="tm-color-primary">George, Chief Editor</span>
+                            </p>
+                        </blockquote>
+                        <blockquote class="tm-mb-50">
+                            <p>
+                                "Quisque et lorem accumsan, sollicitudin
+                                dolor vel, facilisis eros. Donec aliquet felis in
+                                mollis egestas." by <span class="tm-color-primary">Mary, CEO of Web</span>
+                            </p>
+                        </blockquote>  
+                        <div class="tm-text-center">
+                            <a href="#" class="tm-btn tm-btn-primary mfp-prevent-close tm-btn-contact">
+                                Contact Us
+                            </a>
+                        </div>                 
+                    </div>
+                    <div class="tm-col tm-testimonial-col tm-testimonial-col-2">
+                        <p>
+                            Duis sapien diam, eleifend eget vehicula sed,
+                            convallis sit amet elit. Aenean condimentum
+                            vulputate porta.
+                        </p>
+                        <p>
+                            Mauris accumsan erat ante, id sagittis felis
+                            gravida vitae. Sed iaculis tincidunt neque, a
+                            molestie magna vehicula at.
+                        </p>
+                        <p>
+                            Phasellus ornare magna nec nulla pharetra,
+                            nec tristique elit lobortis.
+                        </p>
+                        <img src="img/testimonial-02.jpg" alt="Image" class="tm-mt-35">
+                    </div>
+                </div>
+            </div>            
+        </div>
+
+        <div id="about" class="popup mfp-with-anim mfp-hide tm-bg-gray">
+            <a href="#" class="tm-close-popup">
+                return home
+                <i class="fas fa-times"></i>
+            </a>
+            <h2 class="tm-color-primary tm-about-col tm-mb-40 tm-page-title">About Ocean Vibes</h2>
+            <div class="tm-row tm-about-row">
+                <div class="tm-col tm-about-col tm-about-left">                    
+                    <img src="img/about.jpg" alt="Image" class="tm-mb-30">
+                    <p class="tm-mb-40">
+                        Suspendisse sit amet pellentesque nunc. Vivamus fringilla
+                        tellus finibus lacus blandit, siet amet aliquet augue sagittis.
+                        Duis nec auctor felis, nec ornare ex. In non ante ligula.
+                    </p>
+                    <p class="tm-mb-40">
+                        Curabitur non augue dignissim est pulvibar lobortis. Nunc
+                        vulputate, mi vel cursus mollis, justo mauris rutrum dui, id
+                        egestas ante ligula id nunc. Interdum et malesuada fames
+                        ac ante ipsum primis in faucibus.
+                    </p>
+                </div>
+                <div class="tm-col tm-about-col">
+                    <p class="tm-mb-40">
+                        You are NOT allowed to re-distribute this template ZIP file
+                        on any website that <span class="tm-color-primary">collects and reposts</span> free templates
+                        from many different websites.
+                    </p>
+                    <p class="tm-mb-40">
+                        Pellentesque vitae ipsum vel risus molestie cursus nec quis
+                        lectus. Duis egestas lorem eu nisi finibus, sit amet
+                        elementum lacus pretium. In tempor felis vitae nulla feugiat aliquam.
+                    </p>
+                    <p class="tm-mb-40">
+                If you need a working HTML contact form, 
+                please visit our <a rel="nofollow" href="https://templatemo.com/contact" target="_parent">contact page</a>. </p>
+                    <a href="#" class="tm-btn tm-btn-primary mfp-prevent-close tm-btn-contact tm-mb-40">
+                        Contact Us
+                    </a>
+                </div>               
+            </div>
+        </div>
+
+        <div id="contact" class="popup mfp-with-anim mfp-hide tm-bg-gray">
+            <a href="#" class="tm-close-popup">
+                return home
+                <i class="fas fa-times"></i>
+            </a>
+            <h2 class="tm-contact-col tm-color-primary tm-page-title tm-mb-40">Contact Us</h2>
+            <div class="tm-row tm-contact-row">
+                <div class="tm-col tm-contact-col">
+                
+                <!-- Do you need a working HTML contact form?
+                	Please visit https://templatemo.com/contact page -->
+                    
+                    <form id="contact-form" action="" method="POST" class="tm-contact-form">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control rounded-0" placeholder="Full Name" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control rounded-0" placeholder="Email" required />
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" id="contact-select" name="inquiry">
+                                <option value="-">Subject</option>
+                                <option value="sales">Sales &amp; Marketing</option>
+                                <option value="creative">Creative Design</option>
+                                <option value="uiux">UI / UX</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="8" name="message" class="form-control rounded-0" placeholder="Message" required=></textarea>
+                        </div>
+
+                        <div class="form-group tm-text-right">
+                            <button type="submit" class="tm-btn tm-btn-primary">Send it now</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="tm-col tm-contact-col tm-contact-col-r">
+                    <!-- Map -->
+                    <div class="mapouter tm-mb-40">
+                        <div class="gmap_canvas">
+                            <iframe width="100%" height="520" id="gmap_canvas"
+                                src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        </div>
+                    </div>
+
+                    <!-- Address -->
+                    <address class="tm-mb-40">
+                        110-220 Nam vel ultricies mauris,<br>
+                        Et gravida eros 10220
+                    </address>
+
+                    <!-- Links -->
+                    <ul class="tm-contact-links">
+                        <li>
+                            <a href="tel:0100200340">
+                                <i class="fas fa-phone tm-contact-link-icon"></i>
+                                Tel: 010-020-0340
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@company.com">
+                                <i class="fas fa-at tm-contact-link-icon"></i>
+                                Email: info@company.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.company.com">
+                                <i class="fas fa-link tm-contact-link-icon"></i>
+                                URL: www.company.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <footer class="tm-footer">
+        <span>  </span>
+        <span>
+        <a href="" title="free website templates" target="_parent" rel="nofollow"></a></span>
+</footer>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>    
+    <script src="js/templatemo-script.js"></script>
+</body>
+</html>
